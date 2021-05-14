@@ -4,7 +4,9 @@
   "description": "Kinal's eslint config",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish) && safe-publish-latest"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,25 @@
   "bugs": {
     "url": "https://github.com/kinal-co/javascript/issues"
   },
-  "homepage": "https://github.com/kinal-co/javascript#readme"
+  "homepage": "https://github.com/kinal-co/javascript#readme",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-find-rules": "^3.6.1",
+    "prettier": "^2.3.0",
+    "safe-publish-latest": "^1.1.4"
+  },
+  "peerDependencies": {
+    "eslint": "^7.26.0",
+    "prettier": "^2.3.0"
+  }
 }

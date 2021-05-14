@@ -1,0 +1,28 @@
+{
+  "name": "eslint-config-kinal",
+  "version": "1.0.0",
+  "description": "Kinal's eslint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinal-co/javascript.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "kinal",
+    "javascript",
+    "styleguide",
+    "es2021"
+  ],
+  "author": "Meo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kinal-co/javascript/issues"
+  },
+  "homepage": "https://github.com/kinal-co/javascript#readme"
+}

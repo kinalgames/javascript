@@ -6,6 +6,7 @@ Hướng dẫn này dựa theo tiêu chuẩn của **Airbnb**, xem đầy
 Đối với các dự án của Kinal, tất cả các đoạn mã không tuân theo tiêu chuẩn trên, team lead và reviewer cần reject PR và
 yêu cầu dev sửa lại.
 
+Ngoài ra bạn cũng có thể xem các bộ tiêu chuẩn chung của Kinal cho các ngôn ngữ khác [tại đây](https://github.com/kinal-co/standard).
 ## Yêu cầu chung
 
 - Các thư viện, hooks nên sử dụng kết hợp trong 1 project:

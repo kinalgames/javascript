@@ -1,12 +1,12 @@
 {
   "name": "eslint-config-kinal",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Kinal's eslint config",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
-    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish) && safe-publish-latest"
+    "prepublish": "safe-publish-latest"
   },
   "repository": {
     "type": "git",

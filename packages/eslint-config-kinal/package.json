@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kinal",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Kinal's eslint config",
   "main": "index.js",
   "scripts": {

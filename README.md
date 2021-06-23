@@ -195,7 +195,7 @@ Sau khi chạy command trên, nội dung phần `scripts` trong file `package.js
 #### Cài đặt
 
 ```shell
-npm install -g @commitlint/cli @commitlint/config-conventional
+npm install --save-dev @commitlint/cli @commitlint/config-conventional
 ```
 
 #### Config

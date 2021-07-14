@@ -7,6 +7,7 @@ Hướng dẫn này dựa theo tiêu chuẩn của **Airbnb**, xem đầy
 yêu cầu dev sửa lại.
 
 Ngoài ra bạn cũng có thể xem các bộ tiêu chuẩn chung của Kinal cho các ngôn ngữ khác [tại đây](https://github.com/kinal-co/standard).
+
 ## Yêu cầu chung
 
 - Các thư viện, hooks nên sử dụng kết hợp trong 1 project:
@@ -231,7 +232,7 @@ Ngoài ra có thể thêm các tùy chọn nâng cao
 # Thêm hook
 npx husky add .husky/commit-msg "npx --no-install commitlint --edit $1"
 # hoặc
-yarn husky add .husky/commit-msg "commitlint --edit $1"
+yarn husky add .husky/commit-msg "yarn commitlint --edit $1"
 ```
 
 Chi tiết có thể xem thêm tại [trang chủ](https://commitlint.js.org/)
@@ -262,9 +263,9 @@ Thêm nội dung sau vào file `package.json`
 #### Thêm vào husky
 
 ```shell
-npx husky add .husky/pre-commit "lint-staged"
+npx husky add .husky/pre-commit "npx lint-staged"
 # hoặc
-yarn husky add .husky/pre-commit "lint-staged"
+yarn husky add .husky/pre-commit "yarn lint-staged"
 ```
 
 Sau khi thêm, mỗi khi commit lint-staged sẽ tự động chạy các câu lệnh trong section `lint-staged` của

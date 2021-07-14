@@ -2,9 +2,16 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
-    "husky": "^6.0.0"
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.1",
+    "prettier": "2.3.2"
+  },
+  "lint-staged": {
+    "*.{json,yml,yaml,md}": "prettier --write"
   },
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier --write **/*.{js,jsx,ts,tsx,css,md,json} --ignore-path .gitignore",
+    "format:check": "prettier --check **/*.{js,jsx,ts,tsx,css,md,json} --ignore-path .gitignore"
   }
 }

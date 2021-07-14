@@ -15,7 +15,7 @@ Ngoài ra bạn cũng có thể xem các bộ tiêu chuẩn chung của Kinal ch
   - ESLint
   - Husky
   - Lint-staged
-- Luôn dùng `Typescript` (không dùng Javascript thuần ngoại trừ trường hợp viết thư viện hoặc các package)
+- Luôn dùng `TypeScript` (không dùng JavaScript thuần ngoại trừ trường hợp viết thư viện hoặc các package)
 
 ## Hướng dẫn Cài đặt Prettier và ESLint
 
@@ -151,7 +151,7 @@ npm run lint
 Format code
 
 ```shell
-npm run lin:fix
+npm run lint:fix
 ```
 
 ## Kết hợp ESLint, Prettier, CommitLint với Husky và Lint-staged
@@ -196,6 +196,8 @@ Sau khi chạy command trên, nội dung phần `scripts` trong file `package.js
 
 ```shell
 npm install --save-dev @commitlint/cli @commitlint/config-conventional
+# hoặc
+yarn add --dev @commitlint/cli @commitlint/config-conventional
 ```
 
 #### Config
@@ -214,7 +216,6 @@ Ngoài ra có thể thêm các tùy chọn nâng cao
 {
   "extends": ["@commitlint/config-conventional"],
   "rules": {
-    "subject-case": [2, "always", "sentence-case"],
     "type-enum": [
       2,
       "always",

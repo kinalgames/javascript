@@ -1,10 +1,10 @@
 {
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
-    "husky": "^6.0.0",
-    "lint-staged": "^11.0.1",
-    "prettier": "2.3.2"
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "2.6.1"
   },
   "lint-staged": {
     "*.{json,yml,yaml,md}": "prettier --write"

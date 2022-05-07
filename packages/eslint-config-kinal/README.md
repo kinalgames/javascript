@@ -4,4 +4,10 @@
 
 `npx install-peerdeps --dev eslint-config-kinal`
 
-Add "extends": "eslint-config-kinal" to your eslint config file `.eslintrc.json`.
+Add to your eslint config file `.eslintrc.json`:
+
+```json
+{
+  "extends": "eslint-config-kinal"
+}
+```

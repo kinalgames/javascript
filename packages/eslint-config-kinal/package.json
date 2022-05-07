@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
-    "prepublish": "safe-publish-latest"
+    "prepublishOnly": "safe-publish-latest && yarn run build",
+    "prepublish": "not-in-publish || yarn run prepublishOnly"
   },
   "repository": {
     "type": "git",

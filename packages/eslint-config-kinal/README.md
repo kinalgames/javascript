@@ -8,6 +8,6 @@ Add to your eslint config file `.eslintrc.json`:
 
 ```json
 {
-  "extends": "eslint-config-kinal"
+  "extends": "kinal"
 }
 ```

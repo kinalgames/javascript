@@ -94,7 +94,7 @@ Tạo tệp tin `.eslintrc.json`:
 
 ```json
 {
-  "extends": "eslint-config-kinal"
+  "extends": "kinal"
 }
 ```
 

@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-kinal",
-  "version": "1.0.6",
-  "description": "Kinal's ESLint config",
+  "version": "1.0.7",
+  "description": "KinalGames ESLint config",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -32,6 +32,7 @@
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
@@ -46,7 +47,7 @@
     "typescript": "^4.6.4"
   },
   "peerDependencies": {
-    "eslint": "^8.15.0",
-    "prettier": "^2.6.2"
+    "eslint": "^8.23.1",
+    "prettier": "^2.7.1"
   }
 }

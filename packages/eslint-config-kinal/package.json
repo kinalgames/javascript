@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kinal",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "KinalGames ESLint config",
   "main": "index.js",
   "scripts": {
@@ -29,22 +29,22 @@
   },
   "homepage": "https://github.com/kinal-co/javascript#readme",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.22.0",
-    "@typescript-eslint/parser": "^5.22.0",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.5.0"
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
-    "eslint": "^8.15.0",
+    "eslint": "^8.23.1",
     "eslint-find-rules": "^4.1.0",
-    "prettier": "^2.6.2",
+    "prettier": "^2.7.1",
     "safe-publish-latest": "^2.0.0",
-    "typescript": "^4.6.4"
+    "typescript": "^4.8.3"
   },
   "peerDependencies": {
     "eslint": "^8.23.1",

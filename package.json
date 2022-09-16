@@ -16,7 +16,7 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "format": "prettier --write **/*.{js,jsx,ts,tsx,css,md,json} --ignore-path .gitignore",
-    "format:check": "prettier --check **/*.{js,jsx,ts,tsx,css,md,json} --ignore-path .gitignore"
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md,json}\" --ignore-path .gitignore",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,css,md,json}\" --ignore-path .gitignore"
   }
 }

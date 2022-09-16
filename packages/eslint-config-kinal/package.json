@@ -1,12 +1,12 @@
 {
   "name": "eslint-config-kinal",
-  "version": "1.0.8",
+  "version": "2.0.0",
   "description": "KinalGames ESLint config",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint .",
-    "prepublishOnly": "safe-publish-latest && yarn run build",
+    "lint": "eslint index.js --fix",
+    "prepublishOnly": "safe-publish-latest",
     "prepublish": "not-in-publish || yarn run prepublishOnly"
   },
   "repository": {

@@ -11,7 +11,7 @@ module.exports = {
     'airbnb-typescript',
     'airbnb/hooks',
     'prettier',
-    'plugin:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -19,6 +19,11 @@ module.exports = {
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
+    },
+  },
+  settings: {
+    react: {
+      version: 'detect',
     },
   },
   rules: {
@@ -56,16 +61,14 @@ module.exports = {
         caughtErrorsIgnorePattern: '^_',
       },
     ],
-    '@typescript-eslint/explicit-function-return-type': [
+    '@typescript-eslint/naming-convention': [
       'error',
       {
-        allowExpressions: true,
+        selector: 'variable',
+        format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
+        leadingUnderscore: 'allow',
+        trailingUnderscore: 'allow',
       },
     ],
-  },
-  settings: {
-    react: {
-      version: 'detect',
-    },
   },
 }

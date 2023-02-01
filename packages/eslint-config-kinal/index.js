@@ -2,28 +2,26 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    es6: true,
+    es2021: true,
     node: true,
   },
 
-  extends: [
-    'airbnb',
-    'airbnb-typescript',
-    'airbnb/hooks',
-    'prettier',
-    'plugin:@typescript-eslint/recommended',
-  ],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: '2020',
+    ecmaVersion: 'latest',
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
   },
+  plugins: ['react', 'react-hooks', "jsx-a11y", '@typescript-eslint'],
   settings: {
     react: {
       version: 'detect',
+    },
+    'import/resolver': {
+      typescript: {},
     },
   },
   rules: {
@@ -41,7 +39,6 @@ module.exports = {
       },
     ],
     'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': ['error'],
     'react/prop-types': 'off',
     'react/jsx-filename-extension': [
       'error',
@@ -51,7 +48,7 @@ module.exports = {
     ],
     'react/jsx-props-no-spreading': 'off',
     'react/require-default-props': 'off',
-    'import/prefer-default-export': 'off',
+    '@typescript-eslint/no-shadow': ['error'],
     '@typescript-eslint/no-empty-interface': 'off',
     '@typescript-eslint/no-unused-vars': [
       'warn',
@@ -70,5 +67,6 @@ module.exports = {
         trailingUnderscore: 'allow',
       },
     ],
+    'import/prefer-default-export': 'off',
   },
 }

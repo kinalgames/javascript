@@ -1,52 +1,65 @@
 {
   "name": "eslint-config-kinal",
-  "version": "2.0.2",
-  "description": "KinalGames ESLint config",
+  "version": "3.0.0",
+  "description": "KinalGames ESLint config - Modern flat config for React + TypeScript projects",
   "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint index.js --fix",
+    "test": "node test-config.mjs",
     "prepublishOnly": "safe-publish-latest",
-    "prepublish": "not-in-publish || yarn run prepublishOnly"
+    "prepublish": "not-in-publish || npm run prepublishOnly"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kinal-co/javascript.git"
+    "url": "git+https://github.com/kinalgames/javascript.git"
   },
   "keywords": [
     "eslint",
     "eslintconfig",
     "config",
     "kinal",
+    "kinalgames",
     "javascript",
+    "typescript",
+    "react",
     "styleguide",
-    "es2021"
+    "flat-config",
+    "eslint9"
   ],
   "author": "Meo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kinal-co/javascript/issues"
+    "url": "https://github.com/kinalgames/javascript/issues"
   },
-  "homepage": "https://github.com/kinal-co/javascript#readme",
+  "homepage": "https://github.com/kinalgames/javascript#readme",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.50.0",
-    "@typescript-eslint/parser": "^5.50.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "@eslint/js": "^9.18.0",
+    "typescript-eslint": "^8.20.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "globals": "^15.14.0"
   },
   "devDependencies": {
-    "eslint": "^8.33.0",
-    "eslint-find-rules": "^4.1.0",
-    "prettier": "^2.8.3",
+    "eslint": "^9.18.0",
+    "prettier": "^3.4.2",
     "safe-publish-latest": "^2.0.0",
-    "typescript": "^4.9.5"
+    "typescript": "^5.7.3"
   },
   "peerDependencies": {
-    "eslint": "^8.33.0",
-    "prettier": "^2.8.3"
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "typescript": ">=5.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
